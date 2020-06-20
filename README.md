@@ -94,7 +94,7 @@ The variables included in this graph are explained below:
 From this analysis it looks like users who have not been around very long, who have not listened to a lot of songs, who roll through a lot of ads, and who dislike many songs (by selecting the "Thumbs Down") option are among the higher-risk for churn. The other features also come into play, but this analysis indicates that the newer members are worth targeting if they start to have negative interactions with the app pages.
 
 ## Blog <a name="licensing"></a>
-Results are also summarized in my Medium Blog Post (Churn Churn Churn)[https://medium.com/@bridgethass/to-everything-churn-churn-churn-affca90d37a3]
+Results and key findings are also summarized in my Medium Blog Post [Churn Churn Churn](https://medium.com/@bridgethass/to-everything-churn-churn-churn-affca90d37a3)
 
 ## Licensing, Authors, Acknowledgments <a name="licensing"></a>
 Data is provided by [Udacity](https://www.udacity.com/). The code here is licensed under open source GNU General Public License v3.0.
