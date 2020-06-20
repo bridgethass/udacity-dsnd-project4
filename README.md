@@ -39,11 +39,21 @@ Since my currrent line of work is in aerial mapping and environmental research, 
 
 Exploratory Data Analysis was a key component to this project - converting the `pyspark` dataframes into `pandas` dataframes, and using the `seaborn` plotting package, I was able to determine some variables from the Sparkify dataset that looked to be related to churn. Specifically the page column contained a lot of potentially useful information -- the figure below shows how churn is related to interactions with various pages, highlighting variables that have low and high correlation with churn. These features ended up being key components in the model. 
 
-![Caption.](image.png)
+![Page Interactions v. Churn](page_feature_v_churn.png)
 
-In the modeling section 
+In the modeling section I tested out two models, and used the F1-score to evaluate the model performance. The F1-score is the harmonic mean of precision and recall, and is a good metric to use for imbalanced datasets such as this one, where the percentage of users who churn represents a small proportion of the total users. 
 
+1. Logistic Regression: 
+2. Random Forest
 
+Both of these models performed reasonably well; as an extra check, I calculated the F1 score if I ran a model that just predicted no one would churn, which was 0.66. We can see that both of the models performed better than this scenario, but this also shows the limits of our model. 
+
+Lastly, I looked at the feature importances of the random forest model to gain a better sense of which factors were most useful in predicting churn.  
+
+![Random Forest Feature Importances](rf_feature_importance.png)
+
+From this analysis it looks like users who have not been around very long, and who dislike many songs (by selecting the "Thumbs Down") option are among the higher-risk for churn. The other features also come into play, but it appears that the newer members are the more vulnerable population and are not as "sold" on the app as more long-term users. 
 
 
 ## Licensing, Authors, Acknowledgments <a name="licensing"></a>
+Data is provided by [Udacity](https://www.udacity.com/). The code here is licensed under open source GNU General Public License v3.0.
