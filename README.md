@@ -26,18 +26,22 @@ Predicting churn (customer attrition) rates is a common business problem, partic
 
 ## Data Descriptions <a name="data"></a>
   
-  1) `mini_sparkify_event_data.json`: a small subset of the data used to test PySpark on a local machine (in the Udacity classroom environment)
+  1) `mini_sparkify_event_data.json`: a small subset of the data (128MB) used to test `PySpark` on a local machine (I ran all the analysis in the Udacity classroom environment)
   2) ``: 
 
 ## File Descriptions <a name="files"></a>
 
-The repository contains the following files:
-
-    1) Sparkify.ipynb - this notebook contains exploratory data analysis including the following components:
-        - 
-    2) ...
+The repository contains a single jupyter notebook `Sparkify.ipynb` in which the analysis is carried out, based off the template provided in the Udacity workspace. There is a table of contents at the beginning of this notebook that can be used to get to each section.
 
 ## Results and Discussion<a name="results"></a>
+
+Since my currrent line of work is in aerial mapping and environmental research, I am not as familiar with this sort of business analysis. I did some preliminary research to try and better understand different factors that might play into churn -- this [altexsoft business blog](https://www.altexsoft.com/blog/business/customer-churn-prediction-for-subscription-businesses-using-machine-learning-main-approaches-and-models/) was particularly useful. 
+
+Exploratory Data Analysis was a key component to this project - converting the `pyspark` dataframes into `pandas` dataframes, and using the `seaborn` plotting package, I was able to determine some variables from the Sparkify dataset that looked to be related to churn. Specifically the page column contained a lot of potentially useful information. 
+
+In the modeling section 
+
+![Caption.](image.png)
 
 
 ## Licensing, Authors, Acknowledgments <a name="licensing"></a>
