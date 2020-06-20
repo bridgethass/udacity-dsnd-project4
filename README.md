@@ -35,13 +35,15 @@ The repository contains a single jupyter notebook `Sparkify.ipynb` in which the 
 
 ## Results and Discussion<a name="results"></a>
 
-Since my currrent line of work is in aerial mapping and environmental research, I am not as familiar with this sort of business analysis. I did some preliminary research to try and better understand different factors that might play into churn -- this [altexsoft business blog](https://www.altexsoft.com/blog/business/customer-churn-prediction-for-subscription-businesses-using-machine-learning-main-approaches-and-models/) was particularly useful. 
+Since my currrent line of work is in aerial mapping and environmental research, I am not as familiar with this sort of business analysis. I did some preliminary research to try and better understand different factors that might play into churn -- this [altexsoft business blog](https://www.altexsoft.com/blog/business/customer-churn-prediction-for-subscription-businesses-using-machine-learning-main-approaches-and-models/) was particularly useful as a starting point. 
 
-Exploratory Data Analysis was a key component to this project - converting the `pyspark` dataframes into `pandas` dataframes, and using the `seaborn` plotting package, I was able to determine some variables from the Sparkify dataset that looked to be related to churn. Specifically the page column contained a lot of potentially useful information. 
+Exploratory Data Analysis was a key component to this project - converting the `pyspark` dataframes into `pandas` dataframes, and using the `seaborn` plotting package, I was able to determine some variables from the Sparkify dataset that looked to be related to churn. Specifically the page column contained a lot of potentially useful information -- the figure below shows how churn is related to interactions with various pages, highlighting variables that have low and high correlation with churn. These features ended up being key components in the model. 
+
+![Caption.](image.png)
 
 In the modeling section 
 
-![Caption.](image.png)
+
 
 
 ## Licensing, Authors, Acknowledgments <a name="licensing"></a>
