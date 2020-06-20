@@ -7,12 +7,16 @@ Udacity Data Science Nanodegree Project 4 (Capstone) - Predicting Churn for Spar
 2. [Data Descriptions](#data)
 3. [File Descriptions](#files)
 4. [Results and Discussion](#results)
-5. [Licensing, Authors, and Acknowledgements](#licensing)
+5. [Blog](#blog)
+6. [Licensing, Authors, and Acknowledgements](#licensing)
+
 
 
 ## Project Overview<a name="overview"></a>
 
-This project implements [PySpark](https://spark.apache.org/docs/latest/api/python/index.html) to predict churn for a fictional music-streaming app, called Sparkify. Since this problem involves a large dataset, deploying on a cloud platform such as AWS or IBM cloud makes it possible to run the analysis without running into memory errors. This project involves synthesizing a number of different data science tasks, including:
+This project implements [PySpark](https://spark.apache.org/docs/latest/api/python/index.html) to predict churn for a fictional music-streaming app, called Sparkify. Since this problem involves a large dataset, deploying on a cloud platform such as AWS or IBM cloud makes it possible to run the analysis without running into memory errors.
+
+This project involves synthesizing a number of different data science tasks, including:
  - *exploratory data analysis and visualization*: since we are given a new dataset without a whole lot of background, a large component of this project is getting a sense of this data and teasing out useful and irrelevant pieces in order to better predict churn
  - *data cleaning*: another important task is cleaning the data - removing null values and un-labeled users, etc.
  - *feature engineering*: once we've gotten a sense for the data and an idea of which variables appear to be more related to churn, we can create features that we'll use in the model
@@ -88,6 +92,9 @@ The variables included in this graph are explained below:
 - `level`: subscription level of user (paid/unpaid)
 
 From this analysis it looks like users who have not been around very long, who have not listened to a lot of songs, who roll through a lot of ads, and who dislike many songs (by selecting the "Thumbs Down") option are among the higher-risk for churn. The other features also come into play, but this analysis indicates that the newer members are worth targeting if they start to have negative interactions with the app pages.
+
+## Blog <a name="licensing"></a>
+Results are also summarized in my Medium Blog Post (Churn Churn Churn)[https://medium.com/@bridgethass/to-everything-churn-churn-churn-affca90d37a3]
 
 ## Licensing, Authors, Acknowledgments <a name="licensing"></a>
 Data is provided by [Udacity](https://www.udacity.com/). The code here is licensed under open source GNU General Public License v3.0.
