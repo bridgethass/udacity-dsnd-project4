@@ -26,7 +26,7 @@ Predicting churn (customer attrition) rates is a common business problem, partic
 
 ## Data Descriptions <a name="data"></a>
   
-For this analysis I used a small subset of the data (128MB) provided in the Udacity workspace - `mini_sparkify_event_data.json` in order to test `PySpark` on a local machine (I ran all the analysis in the Udacity classroom environment). The data scheme revealed the following contents, which are explored in more detail in the Jupyter Notebook:
+For this analysis I used a small subset of the data (128MB) provided in the Udacity workspace - `mini_sparkify_event_data.json` in order to test `PySpark` on a local machine (I ran all the analysis in the Udacity classroom environment). The data scheme revealed the following contents, which are explored in more detail in the Jupyter Notebook `Sparkify.ipynb`, described in the next section:
   
   - artist: singer user is listening to
   - auth: authentication - whether the user is cancelled, guest, or logged in/out
@@ -34,15 +34,15 @@ For this analysis I used a small subset of the data (128MB) provided in the Udac
   - gender: user's gender (male, female, null)
   - itemInSession: item id of song in session 
   - lastName: user's last name
-  - length: length of song (in minutes?)
+  - length: length of song 
   - level: user's subscription level (free or paid)
   - location: user's location
-  - method: GET/PULL (not entirely sure what this means)
+  - method: GET/PULL 
   - page: page user is on / action taken
-  - registration: time stamp when user registered << could be useful
+  - registration: time stamp when user registered 
   - sessionId: id of session
   - song: name of song played
-  - status: HTTP status code (200 = request succeeded, 307 = temporary redirect, 404 = error)
+  - status: HTTP status code 
   - ts: timestamp of song
   - userAgent: platform used (web browser & computer)
   - userId: id of user
